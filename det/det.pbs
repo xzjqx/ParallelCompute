@@ -1,0 +1,8 @@
+#!/bin/bash
+#PBS -N det
+#PBS -l nodes=1:ppn=1
+#PBS -q AM101_queue
+#PBS -j oe
+cd $PBS_O_WORKDIR
+./run.sh > result12.txt
+
